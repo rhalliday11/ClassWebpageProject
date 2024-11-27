@@ -5,9 +5,142 @@
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: purple;
+    background-color: #212529;
     color: white;
     text-align: center;
     padding: 10px;
-    font-size: 0.5rem;
+    font-size: .75rem;
+
 }
+
+
+/* Keep the previous CSS and add this */
+.middle-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    text-align: center;
+
+
+}
+.middle-section h4{
+    color: rebeccapurple;
+}
+.middle-section p{
+ padding-top: 40px;
+}
+
+.carousel-container {
+ margin-bottom: 0;
+}
+
+.carousel:hover .carousel-item img {
+    transform: scale(1.10);
+}
+
+.carousel-item img {
+    transition: transform 0.3s ease-in-out;
+}
+
+
+
+aside {
+    margin-top: -150px;
+    text-align: right;
+}
+
+aside h5{
+    color: rebeccapurple;
+}
+
+.last-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    padding-right: 650px;
+    float:left;
+
+}
+
+/* ^^^^^ All style elements for homepage done above ^^^^^^ */
+.mission-statement-section  {
+    margin-top: 20px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.mission-statement-section img {
+    border-radius: 5px;
+}
+
+.values-image {
+    margin-bottom: 20px;
+}
+/* ^^^^^ All style elements for About US done above ^^^^^^ */
+
+.custom-padding {
+    padding-top: 200px;
+}
+
+/* ^^^^ All style elements for Contact Us done above */
+.sort-by {
+    padding-left: 85%;
+}
+.shop-all {
+    padding-top: 40px;
+}
+
+img.all-natural-img {
+    width: 600px;
+    height: 600px;
+    object-fit: cover;  /* Fills in images */
+    transition: transform 0.3s ease-in-out;
+    float:left;
+}
+
+
+img.all-natural-img:hover {
+    transform: scale(1.1);
+}
+
+img.product-img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;  /* Transition effect needed*/
+    float:left;
+}
+
+img.product-img:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 767px) {
+
+    img.all-natural-img, img.product-img {
+        width: 100%;
+        height: auto;
+        max-width: 400px;
+
+    }
+
+
+    .row-cols-3 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+
+    .footer {
+        font-size: 0.6rem;
+    }
+
+
+    .shop-all {
+        padding-top: 20px;
+    }
+}
+
